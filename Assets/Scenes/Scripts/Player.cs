@@ -5,12 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed = 5;
-    public GameObject cake;
+    public GameObject Cake_Stack;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        //I used the plinko demo as the basis (obviously)
+        //I should have just done pong, but I thought my concept was going to be easy to execute
+        //get-a-load of this guy cam 
     }
 
     // Update is called once per frame
@@ -42,7 +44,7 @@ public class Player : MonoBehaviour
 
         if (doSpawn)
         {
-            Instantiate(cake, transform.position, Quaternion.identity);
+            Instantiate(Cake_Stack, transform.position, Quaternion.identity);
         }
     }
 }
